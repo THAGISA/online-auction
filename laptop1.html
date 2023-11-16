@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBid</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/al.jpg" height="80" class ="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="bid.html">Bid</a></li>
+                <li><a href="sell.html">Sell Item</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id ="lg-bag"><a href="cart.html"><i class="far fa fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+
+            </ul>
+        </div>
+
+        <div id="mobile">
+         
+            <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/laptop(4.jpg" width="100%" id="MainImg" alt="">
+
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Laptop</h6>
+            <h4>Accer Aspire</h4>
+            <h2>Start price: R3 000</h2>
+            <h3>Start time: 11:00</h3>
+            <h3>End time: 18:00</h3> <br><br>
+            <input type="number" placeholder="Bidding Amount">
+            <button class="normal" onclick="openPopup()">Bid</button>
+            <div class="pop-up" id="popup">
+                <img src="img/checkmark.jpg" alt="">
+                <h2>Thank you!</h2>
+                <p>Bid successfully logged.Thanks</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            <h4>Product Details</h4>
+            <span>Laptop still functioning well and has no any sign of dent. It has windows 11 running on it and it is a 8gb RAM laptop with a 500 HDD. It comes with it's charger as well.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Available Products</h2>
+        <p>Get More For Less</p>
+        
+        <div class="pro-container">
+            
+            <div class="pro">
+                <img src="img/book(3).jpg" alt="">
+                <div class="des">
+                    <span>Java Programming</span>
+                    <h5>Java Programming by Alfonso Floyd</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart    "></i></a>
+                    <h4>Start price: R200</h4>
+                    
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/book(5).jpg" alt="">
+                <div class="des">
+                    <span>Book</span>
+                    <h5>Database Systems</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart    "></i></a>
+                    <h4>Start price: R350</h4>
+                    
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/book (1).webp" alt="">
+                <div class="des">
+                    <span>Book</span>
+                    <h5>Usborne Law for Beginners</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <h4>Start price: R80</h4>
+                    
+                </div>
+            </div>
+            <div class="pro">
+                <img src="img/eng.jpg" height="260" alt="">
+                <div class="des">
+                    <span>Book</span>
+                    <h5>Engineering Mathematics</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <h4>Start price: R400</h4>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for newsletter</h4>
+            <p>Get E-mail updates about our latest show and <span> auction.</span></p>
+        </div>
+        <div class="form">
+            <input type = "text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/al.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Adddress: </strong> University of Venda, University Rd, Thohoyandou</p>
+            <p><strong>Phone:</strong>011 897 8889/ (+27) 70 939 6523</p>
+            <p><strong>hours</strong>16:00 - 20:00, Fri</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+
+                <div class="icon">
+                    <i class="fas fa-facebook-f"></i>
+                    <i class="fas fa-twitter"></i>
+                    <i class="fas fa-instagram"></i>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my bid</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="img/App-Store-Google-Play-Icons.png" alt="">
+            </div>
+            <p>Secured Payment</p>
+            <img src="img/images.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>2023, EduBid - Online Students' Auction System</p>
+        </div>
+
+    </footer>
+
+    
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+
+    <script src ="script.js"></script>
+    
+</body>
+</html>

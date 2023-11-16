@@ -1,0 +1,108 @@
+<?php
+error_reporting (E_ERROR | E_PARSE);
+  $name=$_POST["name"];
+  $pass=$_POST["pass"];
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBid</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form action="" id="contactForm">
+
+                <div class="alert">"Signup successful</div>
+
+
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa fa-user"  aria-hidden="true"></i></i>
+                        <input type="text" id="fullName" placeholder="Full name" required>
+                    </div>
+                    <div class="input-field" id="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="email" id="emailId" placeholder="Email" required>
+                    </div>
+                    <div class="input-field" id="passw">
+                        <i class="fa fa-user" aria-hidden="true"></i></i>
+                        <input type="password"  id="passId" placeholder="password" required>
+                    </div>
+                    <div class="input-field" id="passwcon">
+                        <i class="fa fa-user" aria-hidden="true"></i></i>
+                        <input type="password" id="passwCon" placeholder="confirm password" required>
+                    </div>
+                    <p>Already have an account? <a href="#" id="login">Login</a></p>
+                </div>
+                <div class="btn-field" onclick="window.location.href='index.html';">
+                    <button type="submit" id="signupBtn" disabled>Sign up</button>
+                    <button type="submit" class="disable" id="signinBtn" disabled >Sign in</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+        let logIn = document.getElementById("login");
+        let conf = document.getElementById("passwcon");
+
+        logIn.onclick = function () {
+
+            nameField.style.maxHeight = "0";
+            conf.style.maxHeight = 0;
+            title.innerHTML = "Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable")
+        }
+
+        signinBtn.onclick = function () 
+        {
+              nameField.style.maxHeight = "0";    
+              title.innerHTML = "Sign In";
+              signupBtn.classList.add("disable");
+              signinBtn.classList.remove("disable");
+        }
+        signupBtn.onclick = function () 
+        {
+              nameField.style.maxHeight = "60px";    
+              title.innerHTML = "Sign Up";
+              signupBtn.classList.remove("disable");
+              signinBtn.classList.add("disable");
+        }
+
+       
+    </script>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="entry.js"></script>
+<script src="log.js"></script>
+
+<?php
+    $file =fopen("test.txt","a");
+    fwrite($file,$fullName)
+    fwrite($file,$emailId);
+    fwrite($file,$passwId);
+    fwrite($file,$passwCon);
+
+?>
+    
+</body>
+</html>
+
